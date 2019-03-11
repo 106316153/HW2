@@ -12,11 +12,11 @@
 <h3>姓名Name:<input type="text" name="name" size="10"><br></h3>
  <h3>年齡Age:<input type="text" name="age" size="10"><br></h3>
 <h3>職業Job:<select name="work"><br></h3>
-<option value="1" selected>學生
-<option value="2">老師
-<option value="3">IT
-<option value="4">商業
-<option value="5">其他
+<option value="Student" selected>學生
+<option value="Teacher">老師
+<option value="IT">IT
+<option value="Business">商業
+<option value="Others">其他
 </select><br>
 <h4>性别Gender:<br></h4>
   <input type="radio" name="gender" value="男性" checked> Male
@@ -32,7 +32,8 @@
 	
 <h3>Comparison:<br><input type="text" name="ObjName" value="None." size="20"><br></h3>
 <h3>檢查結果:<br>
-Fingding lungs：<select check="result"><br><br><br><br><br><br><br><br></h3>
+Fingding lungs：<select check="result" id="檢查肺部"><br><br><br><br><br><br><br><br></h3>
+
 <option value="1" selected>The lungs are clear.
 <option value="2">The inspiratory volumes are small,and this probably accounts for some vascular crowding ahd atelectasis at the bases.
 <option value="3">There is focal opacity at the right lung base most likelyrepresenting right lower lobe atelectasus.
@@ -45,7 +46,7 @@ option value="9">There are multiple patchy areas of consolidation ,widely scatte
 option value="10">There is mild pulmonary vascular engorgement without pulmonary edema.
 </select><br>
 	
-<h3>Heart：<select check="Hea"><br><br><br><br><br></h3>
+<h3>Heart：<select check="Hea" id="檢查心臟"><br><br><br><br><br></h3>
 <option value="1" selected>The heart is normal in size.
 <option value="2">There is mild cardiomegaly.
 <option value="3">There is moderate cardiomegaly.
@@ -54,7 +55,7 @@ option value="10">There is mild pulmonary vascular engorgement without pulmonary
 <option value="6">The heart is top normal in size.
 </select><br>	
 	
-<h3>Mediastinum：<select check="Med"><br></h3>
+<h3>Mediastinum：<select check="Med"> id="縱膈"<br></h3>
 <option value="1" selected>The mediastinum is within normal limits.
 <option value="2">Atherosclerotic calcifications are seen in the aorta.
 <option value="3">Post-operative changes are present in the mediastinum.
@@ -62,7 +63,7 @@ option value="10">There is mild pulmonary vascular engorgement without pulmonary
 <option value="5">Degenerative changes are present in the thoracic spine.
 </select><br>
 	
-<h3>Impression：<select check="Imp"><br><br><br><br><br><br></h3>
+<h3>Impression：<select check="Imp" id="印象"><br><br><br><br><br><br></h3>
 <option value="1" selected>No active disease.
 <option value="2">Cardiomegaly.
 <option value="3">Mild cardiogenic edema.
